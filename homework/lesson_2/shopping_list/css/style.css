@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 100%;
+}
+
+li p {
+	display: inline-block;
+	width: 5rem;
+}
+
+li label, li input {
+	cursor: pointer;
+	padding: 10px;
+	border-radius: .3rem;
+}
+
+li label:hover {
+	background-color: #eee;
+}
