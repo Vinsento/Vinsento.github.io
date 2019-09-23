@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+}
+
+body {
+	font-size: 100%;
+	font-family: sans-serif;
+	background-color: #990909;
+	color:  #ffffff;
+}
+
+.main-header {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.main-header__link {
+	display: inline-block;
+	font-size: 0;
+}
+
+.navigation {
+	background-color: #000;
+	padding: 20px 0 0;
+	text-align: center;
+}
+
+.navigation__list-item {
+	display: inline-block;
+	max-width: 190px;
+}
+
+.navigation__list-item:not(:last-child){
+	margin-right: 80px;
+}
+
+.navigation__list-link {
+	display: block;
+	font-size: 0;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #fff;
+}
+
+.navigation__figcaption {
+    font-size: 1.2rem;
+}
+
+.navigation__list-img {
+	width: 100%;
+}
+
+.main__article {
+	font-size: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.main__article > *{
+    font-size: 1rem;
+    width: 100%;
+}
+
+.main__navigation {
+	max-width: 20%;
+	background-color: #7d0909;
+}
+
+.main__content {
+    max-width: 65%;
+    padding: 20px;
+}
+
+.main__aside {
+	max-width: 15%;
+	background-color: #fff;
+}
+
+.main__navigation-link {
+	color: #e95b11;
+}
+
+.main__navigation-item {
+	margin-bottom: 20px;
+}
+
+.main__navigation-item:last-child,
+.main__content-text:last-child {
+	margin: 0;
+}
+
+.main__content-text {
+	margin-bottom: 20px;
+}
+
+.main__aside-list {
+	list-style: none;
+}
+
+.main__aside-link {
+	color:  #000;
+	text-decoration: none;
+}
+
+.main__aside-title {
+	background-color: #bdbdbd;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+}
+
+.main__aside-item {
+	position: relative;
+	padding: 20px 0;
+}
+
+.main__aside-item::before {
+	content:  "";
+	display: block;
+	width: 70px;
+	border-top: 1px solid #000;
+	position: absolute;
+	top: 0;
+	left: 32%;
+}
+
+/* #990909 - bg -red
+   #7d0909 - aside bg-red
+   #bdbdbd - dark gray
+   #e3dddd - light gray
+   #000000 - black
+   #ffffff - white
+   #e95b11 - orange*/

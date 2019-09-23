@@ -27,14 +27,17 @@ li {
   font-size: 18px;
   text-transform: capitalize;
 }
+
 ::-moz-placeholder { /* Firefox 19+ */
   font-size: 18px;
   text-transform: capitalize;
 }
+
 :-ms-input-placeholder { /* IE 10+ */
   font-size: 18px;
   text-transform: capitalize;
 }
+
 :-moz-placeholder { /* Firefox 18- */
   font-size: 18px;
   text-transform: capitalize;
@@ -94,6 +97,7 @@ li {
 	align-items: center;
     font-size: .5rem;
 }
+
 [type="checkbox"] {
 	margin-right: .5rem;
 }
