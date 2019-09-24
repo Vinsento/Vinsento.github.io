@@ -18,21 +18,21 @@ body {
 	padding-top: 120px;
 }
 
-.header {
+.footer__logo {
 	margin-bottom: 55px;
 }
 
-.main {
+.footer__main {
 	margin-bottom: 90px;
 }
 
-.main__title {
+.footer__title {
 	font-size: 1.25rem;
 	letter-spacing: .25rem;
 	text-transform: uppercase;
 }
 
-.main__social::before {
+.footer__social::before {
 	content: "";
 	display: block;
 	width: 230px;
@@ -41,24 +41,24 @@ body {
 	margin: 0 auto;
 }
 
-.main__list {
+.footer__list {
 	padding-top: 20px;
 }
 
-.main__list-item {
+.footer__list-item {
 	display: inline-block;
 	margin-right: 35px;
 }
 
-.main__list-item:last-child {
+.footer__list-item:last-child {
 	margin: 0;
 }
 
-.footer {
+.basement {
 	text-transform: capitalize;
 }
 
-.footer__item {
+.footer__basement-item {
 	color: #19c8fa;
 	text-decoration: none;
 }
