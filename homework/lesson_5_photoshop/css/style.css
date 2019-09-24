@@ -22,6 +22,10 @@ body {
 	margin-bottom: 55px;
 }
 
+.footer__logo > [href="#"] {
+	display: inline-block;
+}
+
 .footer__main {
 	margin-bottom: 90px;
 }
@@ -48,6 +52,17 @@ body {
 .footer__list-item {
 	display: inline-block;
 	margin-right: 35px;
+}
+
+.footer__list-item > [href="#"] {
+	display: inline-block;
+	font-size: 0;
+}
+
+.footer__list-item [src*="png"] {
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
 }
 
 .footer__list-item:last-child {
