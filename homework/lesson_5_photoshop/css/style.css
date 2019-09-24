@@ -35,6 +35,7 @@ body {
 	font-size: 1.25rem;
 	letter-spacing: .25rem;
 	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
 .footer__social::before {
@@ -42,7 +43,6 @@ body {
 	display: block;
 	width: 230px;
 	border-bottom: 1px solid #fff;
-	padding-top: 20px;
 	margin: 0 auto;
 }
 
