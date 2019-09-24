@@ -22,7 +22,7 @@ body {
 	padding: 10px;
 }
 
-.container {
+.content {
 	background-color: #253030;
 	height: 100%;
 }
@@ -52,10 +52,12 @@ body {
 
 .main__item:nth-child(odd) {
 	background-color: #787a90;
+	border: 2px solid #787a90;
 }
 
 .main__item:nth-child(even) {
 	background-color: #686986;
+	border: 2px solid #686986;
 }
 
 .main__item:hover {
@@ -67,23 +69,17 @@ body {
 .main__label {
 	display: inline-block;
 	width: 100%;
-}
-
-.main__link {
-	display: block;
-	color: #fff;
+	height: 100%;
 	padding-left: 10px;
-	padding-top: 4px;
-	font-size: 1.5rem;
 }
 
-.main__link:active {
+.main__label:active {
 	background-color: #ef8873;
 	height: 100%;
 	width: 100%;
 }
 
-.link_1 .main__label::after {
+.main__item:nth-child(1) .main__text::after {
 	content: "(serch for white liquid)";
 	color: #9B9EB3;
 	font-size: .8rem;
@@ -91,7 +87,7 @@ body {
 	vertical-align: middle;
 }
 
-.link_2 .main__label::after {
+.main__item:nth-child(2) .main__text::after {
 	content: "(sticky for a sandwich)";
 	color: #9B9EB3;
 	font-size: .8rem;
@@ -99,7 +95,7 @@ body {
 	vertical-align: middle;
 }
 
-.link_3 .main__label::after {
+.main__item:nth-child(3) .main__text::after {
 	content: "(bread all over the head)";
 	color: #9B9EB3;
 	font-size: .8rem;
@@ -107,7 +103,7 @@ body {
 	vertical-align: middle;
 }
 
-.link_4 .main__label::after {
+.main__item:nth-child(4) .main__text::after {
 	content: "(not french fries)";
 	color: #9B9EB3;
 	font-size: .8rem;
@@ -115,7 +111,7 @@ body {
 	vertical-align: middle;
 }
 
-.link_5 .main__label::after {
+.main__item:nth-child(5) .main__text::after {
 	content: "(ex horses)";
 	color: #9B9EB3;
 	font-size: .8rem;
@@ -123,7 +119,7 @@ body {
 	vertical-align: middle;
 }
 
-.link_6 .main__label::after {
+.main__item:nth-child(6) .main__text::after {
 	content: "(water ruins people)";
 	color: #9B9EB3;
 	font-size: .8rem;
@@ -133,6 +129,9 @@ body {
 
 .main__text {
 	display: inline-block;
+	color: #fff;
+	font-size: 1.5rem;
+	padding-top: 2px;
 }
 
 [type="checkbox"]:checked + .main__text {
