@@ -53,11 +53,11 @@ body {
 	text-align: left;
 }
 
-.main__item:nth-child(odd) {
+.main__item:nth-child(odd) .main__label {
 	background-color: #787a90;
 }
 
-.main__item:nth-child(even) {
+.main__item:nth-child(even) .main__label {
 	background-color: #686986;
 }
 
@@ -75,7 +75,7 @@ body {
 	border: 2px solid #686986;
 }
 
-.main__label:active {
+.main__item .main__label:active {
 	background-color: #ef8873;
 	height: 100%;
 	width: 100%;
