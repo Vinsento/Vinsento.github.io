@@ -55,15 +55,13 @@ body {
 
 .main__item:nth-child(odd) {
 	background-color: #787a90;
-	border: 2px solid #787a90;
 }
 
 .main__item:nth-child(even) {
 	background-color: #686986;
-	border: 2px solid #686986;
 }
 
-.main__item:hover {
+.main__label:hover {
 	border-top: 2px solid #fff;
 	border-bottom: 2px solid #fff;
 	background-color: #4d5266;
@@ -74,6 +72,7 @@ body {
 	width: 100%;
 	height: 100%;
 	padding-left: 10px;
+	border: 2px solid #686986;
 }
 
 .main__label:active {
@@ -159,4 +158,3 @@ body {
 [type="submit"]:focus {
 	border: 1px solid #ef8873;
 }
-
