@@ -30,10 +30,9 @@ body {
 }
 
 .content__title {
-	display: inline-block;
+	display: block;
 	margin-bottom: 20px;
 	text-transform: capitalize;
-	margin-right: 10px;
 }
 
 .content__word + span {
@@ -46,11 +45,11 @@ body {
 	margin-bottom: 20px;
 }
 
-.content__list:hover .content__item {
+.content__list:hover .content__link {
 	opacity: 0.4;
 }
 
-.content__list .content__item:hover {
+.content__list .content__link:hover {
 	opacity: 1;
 }
 
