@@ -61,13 +61,12 @@ body {
 
 .blog__list {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	margin-bottom: 30px;
 }
 
 .blog__item {
 	list-style: none;
-	padding: 0 15px;
 }
 
 .blog__link {
@@ -96,7 +95,7 @@ body {
 }
 
 .blog__date {
-	display: block;
+	display: inline-block;
 	width: 60px;
 	height: 60px;
 	font-size: 32px;
@@ -106,7 +105,7 @@ body {
 	line-height: .5;
 	text-transform: uppercase;
 	border-radius: 5px;
-	background-color: rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, .4);
 }
 
 .blog__title {
