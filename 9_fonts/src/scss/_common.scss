@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+// font-family: 'Playfair Display', serif;
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:900&display=swap');
+// font-family: 'Noto Sans JP', sans-serif;    ---> like FuturaPt :)
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+// font-family: 'Montserrat', sans-serif;     ---> like Proxima :)
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	font-size: 100%;
+	background-color: $bgc;
+	padding-top: 150px;
+}
+
+.container {
+	max-width: 1100px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+.title {
+	position: absolute;
+	right: 0;
+	left: 325px;
+	top: 50px;
+	background-color: $black;
+	padding: 50px 0 50px 60px;
+	z-index: 2;
+}
+
+.title__subtitle {
+	color: $gray;
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	letter-spacing: 5px;
+}
+
+.title__header {
+	font-family: 'Playfair Display';
+	font-weight: 400;
+	color: #fff;
+	font-size: 3rem;
+	letter-spacing: 5px;
+	text-transform: capitalize;
+	padding-bottom: 5px;
+	border-bottom: 1px solid $d-line;
+}
+
+.menu {
+	position: absolute;
+	right: 0;
+	left: 390px;
+	top: 235px;
+	z-index: 1;
+}
+
+.menu__list {
+	display: flex;
+	background-color: $yellow;
+}
+
+.menu__item {
+	list-style: none;
+}
+
+.menu__link {
+	display: block;
+	padding: 20px;
+}
+
+.menu__link img {
+	opacity: .5;
+}
+
+.menu__link:hover img {
+	opacity: 1;
+}
+
+.main {
+	padding: 200px 125px 0 125px;
+}
+
+.main__date {
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	font-size: 1.25rem;
+	letter-spacing: 5px;
+	color: $light-gray;
+	margin-bottom: 50px;
+}
+
+.main__title {
+	text-transform: uppercase;
+	font-size: 4.8rem;
+	font-family: 'Noto Sans JP';
+	font-weight: 900;
+	letter-spacing: 5px;
+}
+
+.menu__subtitle {
+	font-family: 'Georgia';
+	font-style: italic;
+	color: $white;
+	font-size: 1.8rem;
+	margin-bottom: 60px;
+}
+
+.main__text {
+	font-family: 'Georgia';
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.main__text-italic {
+	font-style: italic;
+}
