@@ -27,6 +27,16 @@ body {
 	margin: 0 auto;
 }
 
+.main:before {
+    content: "";
+    position: absolute;
+    border-left: 2px solid $line;
+    width: 100%;
+    left: 65px;
+    top: 0;
+    bottom: 0;
+}
+
 .title {
 	position: absolute;
 	right: 0;
@@ -87,6 +97,7 @@ body {
 
 .main {
 	padding: 200px 125px 0 125px;
+	position: relative;
 }
 
 .main__date {
