@@ -39,11 +39,12 @@ body {
 
 .blog__item {
 	list-style: none;
-	flex-basis: 360px;
+	min-height: 530px;
+	width: 360px;
 }
 
 .blog__item:first-child {
-	flex-basis: 735px;
+	width: 735px;
 }
 
 .blog__item:first-child .blog__link {
@@ -58,6 +59,7 @@ body {
 .blog__link {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	position: relative;
 	height: 100%;
 	background-color: #fff;
@@ -90,19 +92,13 @@ body {
 
 .blog__subtitle {
 	font-size: 1.3rem;
-	margin-bottom: 55px;
 }
 
 .blog__date {
-	margin-bottom: 20px;
 	min-height: 15px;
 	font-size: .8rem;
 	font-weight: 300;
 	color: #99978F;
-}
-
-.blog__author {
-	padding: 0 0 20px 20px;
 }
 
 .footer {
@@ -121,6 +117,16 @@ body {
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #8996a3;
+}
+
+.blog__date,
+.blog__subtitle,
+.blog__author {
+	padding-left: 20px;
+}
+
+.blog__author {
+	padding-bottom: 20px;
 }
 
 @keyframes rotation {
