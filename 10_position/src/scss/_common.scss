@@ -103,8 +103,11 @@ body {
 	z-index: 5;
 }
 
-.social {
+.list__link:hover .social:hover {
 	background-color: #5ecbe7;
+}
+
+.social {
 	padding: 5px;
 	position: absolute;
 	top: 50%;
@@ -132,4 +135,6 @@ body {
 .left_40{
 	left: 35%;
 }
+
+
 
