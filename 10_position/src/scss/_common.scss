@@ -64,8 +64,12 @@ body {
 	align-self: baseline;
 }
 
-.list__item {
+.list__item,
+.list__social {
 	list-style: none;
+}
+
+.list__item {
 	flex-basis: 270px;
 }
 
