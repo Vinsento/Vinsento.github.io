@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100vh;
+}
+
+body {
+	font-size: 100%;
+	font-family: sans-serif;
+	color: #fff;
+}
+
+.wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100vh;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	padding: 50px 70px;
+	min-height: 500px;
+	max-width: 400px;
+	margin: 0 auto;
+	background: linear-gradient(45deg,
+	            rgba(49,35,174,1) 0%,
+	            rgba(49,35,174,1) 0%,
+	            rgba(160,90,204,1) 95%,
+	            rgba(198,108,214,1) 100%);
+	z-index: 1;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: no-repeat url('../img/breedge.png');
+		background-size: 190%;
+		background-position: center;
+		opacity: .2;
+		z-index: -1;
+	}
+
+
+	&__actions {
+		color: #e1c2f1;
+		padding-bottom: 5px;
+		border-bottom: 2px solid transparent;
+		letter-spacing: 2px;
+		cursor: pointer;
+	}
+
+	&__check {
+		display: none;
+	}
+
+	&__input {
+		width: 260px;
+		background-color: transparent;
+		border: 2px solid #a085c7;
+		padding: 11px;
+		outline: none;
+		color: #fff;
+	}
+
+	&__submit {
+		width: 260px;
+		padding: 9px 0;
+		color: #fff;
+		background-color: #23ae92;
+		border: none;
+		cursor: pointer;
+		transition: all .3s ease;
+	}
+
+	&__submit:hover {
+		background-color: lighten(#23ae92, 5%);
+	}
+
+	&__field {
+		color: #fff;
+		display: inline-block;
+		text-transform: capitalize;
+		margin-bottom: 10px;
+		letter-spacing: 2px;
+	}
+
+	&__checkbox {
+		font-size: .8rem;
+		display: flex;
+		letter-spacing: 1px;
+		color: #e1c2f1;
+		cursor: pointer;
+	}
+
+	&__checkbox::before {
+		content: "";
+		display: inline-block;
+		background-color: #23ae92;
+		width: 16px;
+		height: 16px;
+		margin-right: 5px;
+	}
+
+	&__basement {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__link {
+		display: block;
+		text-decoration: none;
+		font-size: .8rem;
+		color: #b9b9cc;
+		border-bottom: 1px solid #7d71bc;
+		padding-bottom: 5px;
+		transition: all .3s ease;
+	}
+
+	&__link:hover {
+		color: #fff;
+		border-bottom: 1px solid #fff;
+	}
+
+
+}
+
+label[for="one"] {
+	margin-right: 25px;
+}
+
+#one:checked ~ label[for="one"],
+#two:checked ~ label[for="two"] {
+	color: #fff;
+	border-bottom: 2px solid #e66a64;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+#check:checked ~ .form__checkbox {
+	color: #fff;
+}
+
+#check:checked ~ .form__checkbox::before {
+	background: #23ae92 url('../img/check.png') 50% 50% no-repeat;
+}
