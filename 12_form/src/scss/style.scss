@@ -52,6 +52,26 @@ body {
 		z-index: -1;
 	}
 
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		list-style: none;
+	}
+
+	&__btn {
+		display: block;
+		text-decoration: none;
+		color: #e1c2f1;
+		padding: 2px;
+		padding-bottom: 5px;
+		border-bottom: 2px solid transparent;
+	}
+
+	&__item:first-child {
+		margin-right: 25px;
+	}
 
 	&__actions {
 		color: #e1c2f1;
@@ -113,11 +133,6 @@ body {
 		margin-right: 5px;
 	}
 
-	&__basement {
-		display: flex;
-		justify-content: space-between;
-	}
-
 	&__link {
 		display: block;
 		text-decoration: none;
@@ -136,18 +151,22 @@ body {
 
 }
 
-label[for="one"] {
-	margin-right: 25px;
+.basement-list {
+	display: flex;
+	justify-content: space-between;
 }
 
-#one:checked ~ label[for="one"],
-#two:checked ~ label[for="two"] {
+.basement-item {
+	list-style: none;
+}
+
+#check {
+	display: none;
+}
+
+.selected {
 	color: #fff;
 	border-bottom: 2px solid #e66a64;
-}
-
-input[type="checkbox"] {
-	display: none;
 }
 
 #check:checked ~ .form__checkbox {

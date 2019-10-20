@@ -3,37 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<title>Title</title>
-	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<title>Sing in</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.png">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 	<div class="wrap">
 		<form action="#" class="form">
-			<div class="form__roof">
-				<input type="radio" name="option" class="form__check" id="one" checked>
-				<label for="one" class="form__actions">Sign in</label>
-				<input type="radio" name="option" class="form__check" id="two">
-				<label for="two" class="form__actions">Join us</label>
-			</div>
+			<nav class="form__roof">
+				<ul class="form__list">
+					<li class="form__item">
+						<a href="#" class="form__btn selected">Sign in</a>
+					</li>
+					<li class="form__item">
+						<a href="#" class="form__btn">Join us</a>
+					</li>
+				</ul>
+			</nav>
 			<label>
 				<span class="form__field">username</span>
-				<input type="text" class="form__input">
+				<input type="text" class="form__input" required>
 			</label>
 			<label>
 				<span class="form__field">password</span>
-				<input type="password" class="form__input">
+				<input type="password" class="form__input" required>
 			</label>
 			<div>
-				<input type="checkbox" id="check">
+				<input type="checkbox" id="check" required>
 				<label for="check" class="form__checkbox">Keep me signed in</label>
 			</div>
 			<input type="submit" value="Sign in" class="form__submit">
 
 			<div class="form__basement">
-				<a href="#" class="form__link">Forgot password</a>
-				<a href="#" class="form__link">Create an account</a>
+				<ul class="basement-list">
+					<li class="basement-item">
+						<a href="#" class="form__link">Forgot password</a>
+					</li>
+					<li class="basement-item">
+						<a href="#" class="form__link">Create an account</a>
+					</li>
+				</ul>
 			</div>
 		</form>
 	</div>
