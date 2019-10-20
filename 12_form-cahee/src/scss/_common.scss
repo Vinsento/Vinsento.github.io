@@ -95,6 +95,11 @@ body {
 	resize: none;
 }
 
+.info {
+	width: 50%;
+	padding: 0 0 0 70px;
+}
+
 
 .info__title {
 	font-weight: bold;
@@ -103,7 +108,10 @@ body {
 }
 
 .info__subtitle {
+	display: block;
 	margin-bottom: 20px;
+	text-decoration: none;
+	color: #000;
 }
 
 .info__subtitle:last-child {
