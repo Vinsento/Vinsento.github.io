@@ -50,14 +50,19 @@ body {
 	}
 }
 
-.about {
+.about__wrap {
+	max-width: 900px;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	min-height: 630px;
-	background: url('../img/frame.png') 50% 56%no-repeat;
+	background: url('../img/frame.png') 50% 56% no-repeat;
+}
+
+.about {
 
 	&__title {
 		text-transform: uppercase;
@@ -77,6 +82,214 @@ body {
 		max-width: 450px;
 		line-height: 1.5;
 		color: #666;
+		align-self: center;
+	}
+}
+
+.services {
+	background: url('../img/services.jpg') center/contain no-repeat;
+	background-size: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 350px;
+
+	&__wrap {
+		background: url('../img/frame-white.png') 50% 56% no-repeat;
+		max-width: 900px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		min-height: 350px;
+	}
+
+	&__title {
+		color: #fff;
+		font-size: 2.1rem;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		margin-bottom: 60px;
+	}
+
+	&__text {
+		max-width: 560px;
+		color: #fff;
+		line-height: 1.5;
+	}
+
+	&__text:last-child {
+		padding-bottom: 40px;
+	}
+}
+
+.what-we-do {
+	padding: 120px 0;
+
+	&__wrap {
+		max-width: 900px;
+		margin: 0 auto;
+		background: url('../img/frame-big.png') 50% 55% no-repeat;
+		background-size: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding-bottom: 130px;
+	}
+
+	&__title {
+		margin-bottom: 100px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-size: 2.1rem;
+	}
+
+	&__figure {
+		margin-bottom: 40px;
+	}
+
+	&__img {
+		margin-bottom: 40px;
+	}
+
+	&__caption {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.25rem;
+	}
+
+	&__text {
+		margin-bottom: 100px;
+		max-width: 550px;
+		line-height: 1.6;
+		font-size: .8rem;
+	}
+
+	&__item:last-child .what-we-do__text{
+		margin-bottom: 0;
+	}
+}
+
+.our-works {
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+		min-height: 480px;
+	}
+
+	&__item {
+		list-style: none;
+		flex-basis: 29%;
+	}
+
+	&__item:nth-child(2),
+	&__item:nth-child(5) {
+		flex-basis: 41%;
+	}
+
+	&__link {
+		position: relative;
+		display: block;
+		min-height: 235px;
+		text-decoration: none;
+		color: #fff;
+		font-size: 2.1rem;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+
+		& span {
+			position: absolute;
+			left: 15px;
+			bottom: 15px;
+		}
+	}
+}
+
+.first {
+	background: url('../img/Layer-1.jpg') no-repeat;
+}
+
+.two {
+	background: url('../img/Layer-2.jpg') no-repeat;
+}
+
+.three {
+	background: url('../img/Layer-3.jpg') no-repeat;
+}
+
+.four {
+	background: url('../img/Layer-4.jpg') no-repeat;
+}
+
+.five {
+	background: url('../img/Layer-5.jpg') no-repeat;
+}
+
+.six {
+	background: url('../img/Layer-6.jpg') no-repeat;
+}
+
+.contact {
+	padding-top: 140px;
+
+
+	&__wrap {
+		background: url('../img/frame-contact.png') 50% 56% no-repeat;
+		max-width: 900px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding-bottom: 60px;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-size: 1.9rem;
+		margin-bottom: 55px;
+	}
+
+	&__text {
+		max-width: 550px;
+		line-height: 1.6;
+		margin-bottom: 40px;
+	}
+
+	&__btn {
+		display: block;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		padding: 20px 130px;
+		color: #fff;
+		background-color: #3c3c3c;
+	}
+
+	&__btn:hover {
+		background-color: lighten(#3c3c3c, 10%);
+	}
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 0;
+
+	&__img {
+		margin-right: 35px;
 	}
 }
 
