@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+@import 'vars';
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-size: 100%;
+	font-family: $raleway;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 270px;
+	text-align: center;
+	padding-top: 100px;
+
+	&__subtitle {
+		text-transform: uppercase;
+		font-weight: 500;
+		color: $gray;
+		font-size: 1.1rem;
+		letter-spacing: 1px;
+	}
+
+	&__title {
+		font-size: 3.75rem;
+		text-transform: uppercase;
+		color: $yellow;
+		font-family: $roboto;
+		font-weight: 900;
+	}
+
+	&__image {
+		display: flex;
+		align-items: center;
+	}
+
+	&__image img {
+		padding: 0 10px;
+	}
+
+	&__image::before {
+		content: "";
+		display: block;
+		width: 210px;
+		height: 1px;
+		background-color: $yellow;
+	}
+
+	&__image::after {
+		content: "";
+		display: block;
+		width: 210px;
+		height: 1px;
+		background-color: $yellow;
+	}
+}
+
+.hero {
+	padding-top: 40px;
+	margin-bottom: 40px;
+
+	& .wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1120px;
+		min-height: 560px;
+		margin: 0 auto;
+	}
+}
+
+.photo {
+	background: url('../img/image-border.jpg') no-repeat;
+	background-size: 100%;
+	padding: 15px;
+	max-width: 37%;
+
+	&__img {
+		display: block;
+		border: 1px solid $yellow;
+		width: 100%;
+	}
+}
+
+.line {
+	position: absolute;
+	left: 50%;
+	width: 1px;
+	min-height: 560px;
+	background-color: $yellow;
+}
+
+.info {
+	max-width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	min-height: 420px;
+
+	&__name {
+		text-transform: capitalize;
+		font-size: 2.25rem;
+		color: $gray-dark;
+		font-family: $roboto;
+		font-weight: 900;
+	}
+
+	&__name::after {
+		content: "";
+		display: block;
+		width: 100px;
+		margin: 0 auto;
+		border-bottom: 1px solid $yellow;
+		padding-top: 40px;
+	}
+
+	&__profession {
+		text-transform: capitalize;
+		font-size: 1.5rem;
+		color: $gray-dark;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-around;
+		min-width: 150px;
+	}
+
+	&__item {
+		list-style: none;
+	}
+
+	&__text {
+		font-size: .8rem;
+		line-height: 1.7;
+		max-width: 420px;
+		font-weight: 500;
+	}
+
+	&__text::after {
+		content: "";
+		display: block;
+		max-width: 40px;
+		margin: 0 auto;
+		border-bottom: 4px dashed $yellow;
+		padding-top: 20px;
+	}
+
+	&__btn {
+		text-decoration: none;
+		display: block;
+		padding: 5px 10px;
+		font-family: $open-sans;
+		font-weight: 700;
+		color: $gray-dark;
+		text-transform: uppercase;
+		border: 1px solid $yellow;
+		transition: all .3s ease;
+	}
+
+	&__btn:hover {
+		background-color: $yellow;
+	}
+}
+
+.select {
+	padding: 15px 0;
+
+
+	&__form {
+		display: flex;
+		justify-content: space-between;
+		max-width: 50px;
+		margin: 0 auto;
+	}
+
+	&__label {
+		display: block;
+		width: 12px;
+		height: 12px;
+		background-color: $yellow;
+		border-radius: 50%;
+		border: 2px solid transparent;
+		cursor: pointer;
+	}
+
+}
+
+.checked {
+	background-color: #fff;
+	border: 2px solid $yellow;
+}
+
+.arrow {
+	align-self: center;
+}
+
+.hidden {
+	display: none;
+}
