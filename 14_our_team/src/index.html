@@ -25,7 +25,9 @@
 				<img src="./img/left-icon.png" alt="left arrow">
 			</a>
 			<div class="photo">
-				<img src="./img/hero.jpg" alt="hero" class="photo__img">
+				<div class="photo__item">
+					<img src="./img/hero.jpg" alt="hero" class="photo__img">
+				</div>
 			</div>
 			<div class="line"></div>
 			<div class="info">
@@ -34,22 +36,22 @@
 				<div class="info__social">
 					<ul class="info__list">
 						<li class="info__item">
-							<a href="#" class="info__link">
+							<a href="#" class="info__link" target="_blank">
 								<img src="./img/facebook.png" alt="facebook icon">
 							</a>
 						</li>
 						<li class="info__item">
-							<a href="#" class="info__link">
+							<a href="#" class="info__link" target="_blank">
 								<img src="./img/twitter.png" alt="twitter icon">
 							</a>
 						</li>
 						<li class="info__item">
-							<a href="#" class="info__link">
+							<a href="#" class="info__link" target="_blank">
 								<img src="./img/google-plus.png" alt="google-plus icon">
 							</a>
 						</li>
 						<li class="info__item">
-							<a href="#" class="info__link">
+							<a href="#" class="info__link" target="_blank">
 								<img src="./img/linked-in.png" alt="linked-in icon">
 							</a>
 						</li>
@@ -64,19 +66,29 @@
 		</div>
 	</section>
 
-	<section class="select">
-		<form class="select__form">
-			<label class="select__label">
-				<input type="radio" name="carousel" class="hidden">
-			</label>
-			<label class="select__label checked">
-				<input type="radio" name="carousel" class="hidden">
-			</label>
-			<label class="select__label">
-				<input type="radio" name="carousel" class="hidden">
-			</label>
-		</form>
-	</section>
+			<ul class="select">
+				<li class="select__item">
+					<a href="#" class="select__link">
+						<label class="select__label">
+							<input type="radio" name="carousel" class="hidden">
+						</label>
+					</a>
+				</li>
+				<li class="select__item">
+					<a href="#" class="select__link">
+						<label class="select__label checked">
+							<input type="radio" name="carousel" class="hidden">
+						</label>
+					</a>
+				</li>
+				<li class="select__item">
+					<a href="#" class="select__link">
+						<label class="select__label">
+							<input type="radio" name="carousel" class="hidden">
+						</label>
+					</a>
+				</li>
+			</ul>
 
 	<script src="js/bundle.js"></script>
 </body>
