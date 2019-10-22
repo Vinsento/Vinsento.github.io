@@ -51,6 +51,7 @@ body {
 }
 
 .about__wrap {
+	position: relative;
 	max-width: 900px;
 	margin: 0 auto;
 	display: flex;
@@ -59,7 +60,17 @@ body {
 	align-items: center;
 	text-align: center;
 	min-height: 630px;
-	background: url('../img/frame.png') 50% 56% no-repeat;
+}
+
+.about__wrap::before {
+	content: "";
+	position: absolute;
+	display: block;
+	border: 2px solid #3c3c3c;
+	width: 100%;
+	height: 50%;
+	top: 29%;
+	z-index: -1;
 }
 
 .about {
@@ -69,6 +80,8 @@ body {
 		margin-bottom: 40px;
 		font-size: 2.1rem;
 		letter-spacing: 5px;
+		background-color: #fff;
+		padding: 0 10%;
 	}
 
 	&__text {
@@ -96,7 +109,7 @@ body {
 	min-height: 350px;
 
 	&__wrap {
-		background: url('../img/frame-white.png') 50% 56% no-repeat;
+		position: relative;
 		max-width: 900px;
 		width: 100%;
 		margin: 0 auto;
@@ -108,12 +121,46 @@ body {
 		min-height: 350px;
 	}
 
+	&__wrap::before {
+		content: "";
+		position: absolute;
+		display: block;
+		border: 2px solid #fff;
+		border-top: none;
+		width: 100%;
+		height: 70%;
+		top: 20%;
+		left: 0;
+	}
+
+	&__title::before {
+		content: "";
+		position: absolute;
+		display: block;
+		border-top: 2px solid #fff;
+		width: 30%;
+		top: 20%;
+		left: 0;
+	}
+
+	&__title::after {
+		content: "";
+		position: absolute;
+		display: block;
+		border-top: 2px solid #fff;
+		width: 30%;
+		top: 20%;
+		right: -2px;
+	}
+
 	&__title {
 		color: #fff;
+		background-color: transparent;
 		font-size: 2.1rem;
 		text-transform: uppercase;
 		letter-spacing: 5px;
 		margin-bottom: 60px;
+		padding: 0 10%;
 	}
 
 	&__text {
@@ -121,20 +168,15 @@ body {
 		color: #fff;
 		line-height: 1.5;
 	}
-
-	&__text:last-child {
-		padding-bottom: 40px;
-	}
 }
 
 .what-we-do {
 	padding: 120px 0;
 
 	&__wrap {
+		position: relative;
 		max-width: 900px;
 		margin: 0 auto;
-		background: url('../img/frame-big.png') 50% 55% no-repeat;
-		background-size: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -143,11 +185,24 @@ body {
 		padding-bottom: 130px;
 	}
 
+	&__wrap::before {
+		content: "";
+		position: absolute;
+		display: block;
+		border: 2px solid #3c3c3c;
+		width: 100%;
+		height: 95%;
+		top: calc(2% - 5px);
+	}
+
 	&__title {
 		margin-bottom: 100px;
 		text-transform: uppercase;
 		letter-spacing: 5px;
 		font-size: 2.1rem;
+		background-color: #fff;
+		padding: 0 10%;
+		z-index: 2;
 	}
 
 	&__figure {
@@ -165,13 +220,16 @@ body {
 	}
 
 	&__text {
-		margin-bottom: 100px;
 		max-width: 550px;
 		line-height: 1.6;
 		font-size: .8rem;
 	}
 
-	&__item:last-child .what-we-do__text{
+	&__item {
+		margin-bottom: 100px;
+	}
+
+	&__item:last-child {
 		margin-bottom: 0;
 	}
 }
@@ -243,7 +301,7 @@ body {
 
 
 	&__wrap {
-		background: url('../img/frame-contact.png') 50% 56% no-repeat;
+		position: relative;
 		max-width: 900px;
 		margin: 0 auto;
 		display: flex;
@@ -254,11 +312,25 @@ body {
 		padding-bottom: 60px;
 	}
 
+	&__wrap::before {
+		content: "";
+		position: absolute;
+		display: block;
+		border: 2px solid #3c3c3c;
+		width: 100%;
+		height: 90%;
+		top: 5%;
+		z-index: -1;
+	}
+
 	&__title {
 		text-transform: uppercase;
 		letter-spacing: 5px;
 		font-size: 1.9rem;
 		margin-bottom: 55px;
+		padding: 0 10%;
+		background-color: #fff;
+		z-index: 2;
 	}
 
 	&__text {
@@ -287,12 +359,14 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding: 15px 0;
-
-	&__img {
-		margin-right: 35px;
-	}
 }
 
 .db {
 	display: block;
 }
+
+.footer__img {
+	margin-right: 25px;
+}
+
+
