@@ -59,45 +59,37 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	min-height: 630px;
-}
-
-.about__wrap::before {
-	content: "";
-	position: absolute;
-	display: block;
-	border: 2px solid #3c3c3c;
+	border: 2px solid #000;
 	border-top: none;
-	width: 100%;
-	height: 50%;
-	top: 29%;
-	z-index: -1;
+	padding-bottom: 40px;
 }
 
 .about {
+	padding: 160px 0;
 
 	&__title {
 		text-transform: uppercase;
 		margin-bottom: 40px;
 		font-size: 2.1rem;
 		letter-spacing: 5px;
+		transform: translatey(-50%);
 	}
 
-	&__title::before,
-	&__title::after {
+	&__wrap::before,
+	&__wrap::after {
 		content: "";
 		position: absolute;
 		display: block;
 		border-top: 2px solid #000;
 		width: 30%;
-		top: 29%;
+		top: 0;
 	}
 
-	&__title::before {
+	&__wrap::before {
 		left: 0;
 	}
 
-	&__title::after {
+	&__wrap::after {
 		right: 0;
 	}
 
@@ -124,6 +116,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 350px;
+	padding: 130px 0 110px 0;
 
 	&__wrap {
 		position: relative;
@@ -135,36 +128,26 @@ body {
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		min-height: 350px;
-	}
-
-	&__wrap::before {
-		content: "";
-		position: absolute;
-		display: block;
 		border: 2px solid #fff;
 		border-top: none;
-		width: 100%;
-		height: 70%;
-		top: 20%;
-		left: 0;
+		padding-bottom: 30px;
 	}
 
-	&__title::before,
-	&__title::after {
+	&__wrap::before,
+	&__wrap::after {
 		content: "";
 		position: absolute;
 		display: block;
 		border-top: 2px solid #fff;
 		width: 30%;
-		top: 20%;
+		top: 0;
 	}
 
-	&__title::before {
+	&__wrap::before {
 		left: 0;
 	}
 
-	&__title::after {
+	&__wrap::after {
 		right: -2px;
 	}
 
@@ -174,6 +157,7 @@ body {
 		text-transform: uppercase;
 		letter-spacing: 5px;
 		margin-bottom: 60px;
+		transform: translatey(-50%);
 	}
 
 	&__text {
@@ -195,18 +179,9 @@ body {
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		padding-bottom: 130px;
-	}
-
-	&__wrap::before {
-		content: "";
-		position: absolute;
-		display: block;
-		border: 2px solid #3c3c3c;
+		border: 2px solid #000;
 		border-top: none;
-		width: 100%;
-		height: 95%;
-		top: calc(2% - 5px);
+		padding-bottom: 40px;
 	}
 
 	&__title {
@@ -214,23 +189,24 @@ body {
 		text-transform: uppercase;
 		letter-spacing: 5px;
 		font-size: 2.1rem;
+		transform: translatey(-50%);
 	}
 
-	&__title::before,
-	&__title::after {
+	&__wrap::before,
+	&__wrap::after {
 		content: "";
 		position: absolute;
 		display: block;
 		border-top: 2px solid #000;
 		width: 30%;
-		top: calc(2% - 5px);
+		top: 0;
 	}
 
-	&__title::before {
+	&__wrap::before {
 		left: 0;
 	}
 
-	&__title::after {
+	&__wrap::after {
 		right: 0;
 	}
 
@@ -339,18 +315,8 @@ body {
 		align-items: center;
 		text-align: center;
 		padding-bottom: 60px;
-	}
-
-	&__wrap::before {
-		content: "";
-		position: absolute;
-		display: block;
-		border: 2px solid #3c3c3c;
+		border: 2px solid #000;
 		border-top: none;
-		width: 100%;
-		height: 90%;
-		top: 5%;
-		z-index: -1;
 	}
 
 	&__title {
@@ -358,23 +324,24 @@ body {
 		letter-spacing: 5px;
 		font-size: 1.9rem;
 		margin-bottom: 55px;
+		transform: translatey(-50%);
 	}
 
-	&__title::before,
-	&__title::after {
+	&__wrap::before,
+	&__wrap::after {
 		content: "";
 		position: absolute;
 		display: block;
 		border-top: 2px solid #000;
 		width: 30%;
-		top: 5%;
+		top: 0;
 	}
 
-	&__title::before {
+	&__wrap::before {
 		left: 0;
 	}
 
-	&__title::after {
+	&__wrap::after {
 		right: 0;
 	}
 
