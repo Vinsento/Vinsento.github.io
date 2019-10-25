@@ -1,3 +1,5 @@
+@import 'media';
+
 * {
 	margin: 0;
 	padding: 0;
@@ -16,13 +18,14 @@ body {
 .first-screen {
 	background: url('../img/hero-bg.jpg') no-repeat;
 	background-size: 100%;
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 100px 0 50px 0;
 
 	&__logo {
+		width: 6%;
 		margin-bottom: 90px;
 	}
 
@@ -42,11 +45,12 @@ body {
 		max-width: 600px;
 		text-transform: uppercase;
 		line-height: 2;
+		margin-bottom: 70px;
 	}
 
 	&__scroll {
-		position: absolute;
-		bottom: 2%;
+		display: inline-block;
+		font-size: 0;
 	}
 }
 
@@ -100,7 +104,7 @@ body {
 
 .services {
 	background: url('../img/services.jpg') center/contain no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 	padding: 130px 0 110px 0;
 
 	&__wrap {
@@ -351,6 +355,371 @@ body {
 
 .footer__img {
 	margin-right: 25px;
+}
+
+@media screen and (max-width: 1025px) {
+	.first-screen {
+		padding: 50px 0 25px 0;
+
+		&__logo {
+			margin-bottom: 45px;
+		}
+
+		&__subtitle {
+			margin-bottom: 60px;
+		}
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.first-screen {
+		padding: 20px 0;
+
+		&__title {
+			font-size: 2.4rem;
+		}
+
+		&__subtitle {
+			margin-bottom: 40px;
+		}
+
+		&__scroll-image {
+			width: 75%;
+		}
+	}
+
+	.services {
+		padding: 50px 0;
+
+		&__title {
+			margin-bottom: 0;
+		}
+	}
+
+	.about {
+		padding: 80px 0;
+
+		&__title {
+			margin-bottom: 0;
+		}
+	}
+
+	.what-we-do {
+		padding: 60px 0;
+
+		&__title {
+			margin-bottom: 40px;
+		}
+
+		&__item {
+			margin-bottom: 50px;
+		}
+
+		&__img {
+			margin-bottom: 10px;
+		}
+
+		&__figure {
+			margin-bottom: 20px;
+		}
+	}
+
+	.wrapper {
+		max-width: 728px;
+	}
+
+	.our-works {
+
+		&__list {
+			min-height: 324px;
+		}
+
+		&__link {
+			font-size: 1.5rem;
+			min-height: 160px;
+		}
+	}
+
+	.contact {
+		padding: 50px 0;
+
+		&__title {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.first-screen {
+
+
+		&__logo {
+			margin-bottom: 10px;
+		}
+
+		&__title {
+			font-size: 1.5rem;
+			margin-bottom: 10px;
+		}
+
+		&__subtitle {
+			font-size: .7rem;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+
+		&__scroll-image {
+			width: 60%;
+		}
+	}
+
+	.about {
+		padding: 40px 0;
+
+		&__wrap::before,
+		&__wrap::after {
+			width: 20%;
+		}
+
+		&__title {
+			font-size: 1.5rem;
+		}
+
+		&__text {
+			margin-bottom: 0;
+			font-size: .9rem;
+		}
+
+		&__description {
+			font-size: .9rem;
+		}
+	}
+
+	.services {
+		&__title {
+			font-size: 1.5rem;
+		}
+
+		&__wrap::before,
+		&__wrap::after {
+			width: 20%;
+		}
+	}
+
+	.what-we-do {
+		
+		&__wrap {
+			padding: 0 10px 10px 10px;
+		}
+
+		&__wrap::before,
+		&__wrap::after {
+			width: 20%;
+		}
+
+		&__title {
+			font-size: 1.5rem;
+			margin-bottom: 10px;
+		}
+
+		&__img {
+			width: 60px;
+		}
+
+		&__caption {
+			font-size: 1rem;
+		}
+
+		&__item {
+			margin-bottom: 30px;
+		}
+	}
+
+	.our-works {
+		padding: 0 10px;
+
+		&__item {
+			flex-basis: 100%;
+			margin-bottom: 5px;
+		}
+
+		&__item:nth-child(2),
+		&__item:nth-child(5) {
+			flex-basis: 100%;
+		}
+	}
+
+	.contact {
+
+
+		&__wrap::before,
+		&__wrap::after {
+			width: 20%;
+		}
+
+		&__title {
+			font-size: 1.5rem;
+		}
+
+		&__text {
+			font-size: .9rem;
+		}
+
+		&__btn {
+			padding: 20px 100px;
+		}
+	}
+
+	.wrapper {
+		max-width: 400px;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.first-screen {
+		padding: 5px 0;
+
+		&__logo {
+			margin-bottom: 10px;
+		}
+
+		&__title {
+			font-size: 1.2rem;
+			margin-bottom: 10px;
+		}
+
+		&__subtitle {
+			font-size: .6rem;
+			line-height: 1.3;
+			margin-bottom: 5px;
+		}
+
+		&__scroll-image {
+			width: 45%;
+		}
+	}
+
+	.about {
+		padding: 40px 0;
+
+		&__wrap {
+			padding: 0 10px 10px 10px;
+		}
+
+		&__wrap::before,
+		&__wrap::after {
+			width: 20%;
+		}
+
+		&__title {
+			font-size: 1.5rem;
+		}
+
+		&__text {
+			margin-bottom: 0;
+			font-size: .8rem;
+		}
+
+		&__description {
+			font-size: .8rem;
+		}
+	}
+
+	.services {
+		padding: 20px 0;
+
+		&__wrap {
+			padding: 0 10px 10px 10px;
+		}
+
+		&__title {
+			font-size: 1.5rem;
+		}
+
+		&__wrap::before,
+		&__wrap::after {
+			width: 20%;
+		}
+
+		&__text {
+			font-size: .8rem;
+		}
+	}
+
+	.what-we-do {
+		
+		&__wrap {
+			padding: 0 10px 10px 10px;
+		}
+
+		&__wrap::before,
+		&__wrap::after {
+			width: 15%;
+		}
+
+		&__title {
+			font-size: 1.2rem;
+			margin-bottom: 10px;
+		}
+
+		&__img {
+			width: 40px;
+		}
+
+		&__caption {
+			font-size: .8rem;
+		}
+
+		&__item {
+			margin-bottom: 30px;
+		}
+	}
+
+	.our-works {
+		padding: 0 10px;
+
+		&__item {
+			flex-basis: 100%;
+			margin-bottom: 5px;
+		}
+
+		&__item:nth-child(2),
+		&__item:nth-child(5) {
+			flex-basis: 100%;
+		}
+	}
+
+	.contact {
+		&__wrap {
+			padding: 0 10px 10px 10px;
+		}
+
+		&__wrap::before,
+		&__wrap::after {
+			width: 15%;
+		}
+
+		&__title {
+			font-size: 1.5rem;
+			letter-spacing: 2px;
+		}
+
+		&__text {
+			font-size: .9rem;
+		}
+
+		&__btn {
+			padding: 20px 40px;
+		}
+	}
+
+	.footer {
+		font-size: .8rem;
+	}
+
+	.wrapper {
+		max-width: 300px;
+	}
 }
 
 
