@@ -1,12 +1,68 @@
+$header-height: 32px;
+$pt: 60px;
+
+.sh-wrapper {
+
+	&-outer {
+		min-height: calc(100vh - #{$header-height + $pt});
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		// xs-screen
+		@media all and (max-width: 767px) {
+
+		}
+
+		// sm-screen
+		@media all and (min-width: 768px) and (max-width: 991px) {
+
+		}
+
+		// md-screen
+		@media all and (min-width: 992px) and (max-width: 1199px) {
+
+		}
+
+		// lg-screen
+		@media all and (min-width: 1200px) and (max-width: 1919px) {
+
+		}
+
+		// xl-screen
+		@media all and (min-width: 1920px) {
+
+		}
+
+
+	}
+
+	&-inner {
+		display: flex;
+		flex-direction: column;
+
+		&.top {
+			flex-grow: 2;
+			justify-content: center;
+		}
+
+		&.bottom {
+			flex-grow: 1;
+		}
+	}
+
+}
+
 .sh-first-screen {
 	min-height: 100vh;
-	padding-top: 60px;
+	padding-top: $pt;
 	background: $grey-bg url("../img/glass.png") no-repeat 78% 85%;
 
 	&__header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		max-height: $header-height;
 	}
 
 	&__anchor {
@@ -18,7 +74,7 @@
 		font-weight: 400;
 		display: flex;
 		justify-content: center;
-		padding: 5px 10px;
+		padding: 5px 0;
 		border: 2px solid currentcolor;
 		border-radius: 2px;
 		width: 100%;
@@ -28,30 +84,8 @@
 
 		&:hover {
 			background-color: $corp-cyan;
-			border-color: $corp-cyan;
 		}
 	}
-}
-
-.sh-wrapper-outer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	min-height: calc(100vh - 93px);
-}
-
-.sh-wrapper-inner {
-	display: flex;
-	flex-direction: column;
-}
-
-.top {
-	flex-grow: 2;
-	justify-content: center;
-}
-
-.bottom {
-	flex-grow: 1;
 }
 
 .sh-logo {
@@ -66,17 +100,16 @@
 	line-height: 1.1;
 	padding: 2px 5px;
 	border: 1px solid $grey-border;
-	box-shadow: 0 0 0 5px $grey-dark-border;
+	box-shadow: 0 0 0 5px $dark-grey-border;
 
 	&__span {
 		color: $corp-cyan;
 		font-size: 1.5rem;
-		text-shadow: 0 0 1px $grey-text;
+		text-shadow: 0 0 1px $text-dark;
 	}
 }
 
 .sh-navigation {
-
 
 	&__btn {
 		font-size: px_to_rem(21px);
@@ -86,15 +119,19 @@
 			display: none;
 		}
 
-		&__active {
+		.fa-bars {
+			display: block;
+		}
 
+		&.active {
 			.fa-times {
 				display: block;
 			}
-
 			.fa-bars {
 				display: none;
 			}
 		}
 	}
+
 }
+

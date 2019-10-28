@@ -16,13 +16,13 @@ body {
 }
 
 .first-screen {
-	background: url('../img/hero-bg.jpg') no-repeat;
-	background-size: 100%;
+	background: url('../img/hero-bg.jpg') center/cover no-repeat;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 100px 0 50px 0;
+	height: 100vh;
 
 	&__logo {
 		width: 6%;
@@ -371,6 +371,20 @@ body {
 	}
 }
 
+@media screen and (max-width: 869px) {
+	.wrapper {
+		max-width: 760px;
+	}
+
+	.our-works__list {
+		min-height: 474px;
+	}
+
+	.our-works__link {
+		font-size: 1.5rem;
+	}
+}
+
 @media screen and (max-width: 769px) {
 	.first-screen {
 		padding: 20px 0;
@@ -425,7 +439,7 @@ body {
 	}
 
 	.wrapper {
-		max-width: 728px;
+		max-width: 670px;
 	}
 
 	.our-works {
@@ -449,7 +463,139 @@ body {
 	}
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 676px) {
+	.first-screen {
+
+
+		&__logo {
+			margin-bottom: 20px;
+		}
+
+		&__title {
+			font-size: 2rem;
+			margin-bottom: 20px;
+		}
+
+		&__subtitle {
+			font-size: .9rem;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+
+		&__scroll-image {
+			width: 70%;
+		}
+	}
+
+	.about {
+		padding: 40px 0;
+
+		&__wrap::before,
+		&__wrap::after {
+			width: 20%;
+		}
+
+		&__title {
+			font-size: 1.5rem;
+		}
+
+		&__text {
+			margin-bottom: 0;
+			font-size: .9rem;
+		}
+
+		&__description {
+			font-size: .9rem;
+		}
+	}
+
+	.services {
+		&__title {
+			font-size: 1.5rem;
+		}
+
+		&__wrap::before,
+		&__wrap::after {
+			width: 20%;
+		}
+	}
+
+	.what-we-do {
+
+		&__wrap {
+			padding: 0 10px 10px 10px;
+		}
+
+		&__wrap::before,
+		&__wrap::after {
+			width: 20%;
+		}
+
+		&__title {
+			font-size: 1.5rem;
+			margin-bottom: 10px;
+		}
+
+		&__img {
+			width: 60px;
+		}
+
+		&__caption {
+			font-size: 1rem;
+		}
+
+		&__item {
+			margin-bottom: 30px;
+		}
+
+		&__text {
+			font-size: 1rem;
+		}
+	}
+
+	.our-works {
+		padding: 0 10px;
+
+		&__item {
+			flex-basis: 49.5%;
+			margin-bottom: 5px;
+		}
+
+		&__item:nth-child(2),
+		&__item:nth-child(5) {
+			flex-basis: 49.5%;
+		}
+	}
+
+	.contact {
+		&__wrap {
+			padding-bottom: 40px;
+		}
+
+		&__wrap::before,
+		&__wrap::after {
+			width: 20%;
+		}
+
+		&__title {
+			font-size: 1.5rem;
+		}
+
+		&__text {
+			font-size: .9rem;
+		}
+
+		&__btn {
+			padding: 20px 100px;
+		}
+	}
+
+	.wrapper {
+		max-width: 525px;
+	}
+}
+
+@media screen and (max-width: 576px) {
 	.first-screen {
 
 
@@ -647,7 +793,7 @@ body {
 	}
 
 	.what-we-do {
-		
+
 		&__wrap {
 			padding: 0 10px 10px 10px;
 		}
