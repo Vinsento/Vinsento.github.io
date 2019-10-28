@@ -1,0 +1,45 @@
+.nav__menu-btn {
+	display: block;
+	position: relative;
+	width: 70px;
+	height: 70px;
+	display: none;
+}
+
+.burger-line,
+.burger-line::before,
+.burger-line::after {
+	position: absolute;
+	width: 20px;
+	height: 2px;
+	background-color: #000;
+	top: 50%;
+	left: 50%;
+	margin-top: -1px;
+	margin-left: -10px;
+	transition: .3s;
+}
+
+.burger-line::before,
+.burger-line::after {
+	content: "";
+}
+
+.burger-line::before {
+	transform: translateY(-5px);
+}
+.burger-line::after {
+	transform: translateY(5px);
+}
+
+.active .burger-line {
+	background-color: transparent;
+}
+
+.active .burger-line::before {
+	transform: rotate(45deg);
+}
+
+.active .burger-line::after {
+	transform: rotate(135deg);
+}

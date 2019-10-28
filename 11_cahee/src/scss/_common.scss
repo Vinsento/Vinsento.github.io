@@ -13,8 +13,7 @@ body {
 }
 
 .content {
-	background: url('../img/home_bg.jpg') 50% 30% no-repeat;
-	background-size: 100%;
+	background: url('../img/home_bg.jpg') center/cover no-repeat;
 }
 
 .first-screen {
@@ -66,7 +65,8 @@ body {
 }
 
 .home {
-	min-height: 90%;
+	padding-top: 100px;
+	min-height: calc(100vh-87px);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
