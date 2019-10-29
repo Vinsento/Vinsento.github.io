@@ -6,6 +6,7 @@
 
 	.nav__btn {
 		display: inline-block;
+		padding: 10px;
 		border-top: 3px solid transparent;
 		border-bottom: 3px solid transparent;
 		color: #818181;
@@ -19,13 +20,14 @@
 
 	.nav__list {
 		flex-direction: column;
-		min-width: 0;
+		width: 0;
 		height: 100%;
 		position: fixed;
 		top: 0;
-		left: -250px;
-		background-color: #111;
-		padding: 60px 0 60px 10px;
+		left: 0;
+		overflow: hidden;
+		padding: 60px 0;
+		padding-left: 10px;
 		transition: .5s;
 	}
 
@@ -35,8 +37,12 @@
 		z-index: 3;
 	}
 
-	.db {
+	.w {
 		width: 250px;
+		background-color: #111;
+	}
+
+	.m {
 		margin-left: 250px;
 	}
 

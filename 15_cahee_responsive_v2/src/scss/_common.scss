@@ -42,11 +42,12 @@ body {
 .nav__list {
 	display: flex;
 	justify-content: space-between;
+	width: 560px;
 	list-style: none;
-	min-width: 560px;
 }
 
 .nav__btn {
+	display: block;
 	padding: 2px;
 	padding-top: 9px;
 	border-top: 3px solid transparent;
