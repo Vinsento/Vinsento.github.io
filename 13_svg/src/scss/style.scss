@@ -1,5 +1,3 @@
-@import 'media';
-
 * {
 	margin: 0;
 	padding: 0;
@@ -371,7 +369,25 @@ body {
 	}
 }
 
-@media screen and (max-width: 869px) {
+@media screen and (max-width: 869px) and (orientation: landscape) {
+
+	.first-screen {
+
+		&__logo {
+			margin-bottom: 20px;
+		}
+
+
+		&__title {
+			font-size: 2.4rem;
+			margin-bottom: 20px;
+		}
+
+		&__scroll {
+			display: none;
+		}
+	}
+
 	.wrapper {
 		max-width: 760px;
 	}
