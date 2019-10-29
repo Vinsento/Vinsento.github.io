@@ -42,11 +42,8 @@ body {
 .nav__list {
 	display: flex;
 	justify-content: space-between;
-	min-width: 560px;
-}
-
-.nav__item {
 	list-style: none;
+	min-width: 560px;
 }
 
 .nav__btn {

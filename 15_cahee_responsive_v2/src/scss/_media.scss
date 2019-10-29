@@ -1,0 +1,51 @@
+@media screen and (max-width: 800px) {
+
+	.content {
+		transition: margin-left .5s;
+	}
+
+	.nav__btn {
+		display: inline-block;
+		border-top: 3px solid transparent;
+		border-bottom: 3px solid transparent;
+		color: #818181;
+
+		&:hover {
+			color: #fff;
+			border-top: 3px solid transparent;
+			border-bottom: 3px solid #fff;
+		}
+	}
+
+	.nav__list {
+		flex-direction: column;
+		min-width: 0;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: -250px;
+		background-color: #111;
+		padding: 60px 0 60px 10px;
+		transition: .5s;
+	}
+
+	.nav__menu-btn {
+		display: block;
+		background-color: #fff;
+		z-index: 3;
+	}
+
+	.db {
+		width: 250px;
+		margin-left: 250px;
+	}
+
+	.about {
+		flex-direction: column;
+		align-items: center;
+
+		& img{
+			width: 40%;
+		}
+	}
+}
