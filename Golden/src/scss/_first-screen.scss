@@ -1,0 +1,94 @@
+.first-screen {
+    background: url('../img/first-screen_bg.jpg') center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        opacity: .3;
+    }
+    
+    &__welcome {
+        position: relative;
+        z-index: 1;
+    }
+    
+    &__text {
+        font-family: $lora;
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+    
+    &__title {
+        text-transform: uppercase;
+        font-family: $montseratt;
+        font-weight: 700;
+        font-size: 4.7rem;
+        color: #fff;
+        margin-bottom: 60px;
+    }
+    
+    &__btn {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: $montseratt;
+        font-weight: 700;
+        background-color: $yellow;
+        padding: 25px 50px;
+        border-radius: 4px;
+    }
+}
+
+.header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 200px;
+    
+    &__logo {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-family: 'Marck Script';
+        font-size: 1.5rem;
+        color: $yellow;
+    }
+    
+    &__list {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        min-width: 485px;
+        list-style: none;
+    }
+    
+    &__link {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: $montseratt;
+        font-size: .9rem;
+    }
+    
+}
