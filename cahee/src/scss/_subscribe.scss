@@ -1,0 +1,46 @@
+.subscribe {
+	background: #fff url('../img/subscribe_bg.jpg') center/cover no-repeat;
+	min-height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.subscribe__content {
+		max-width: 1200px;
+		padding-left: 5%;
+	}
+
+	&__title {
+		text-transform: capitalize;
+		font-size: 2.5rem;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		max-width: 570px;
+		line-height: 1.7;
+		margin-bottom: 30px;
+	}
+
+	&__mail {
+		padding: 20px 15px;
+		max-width: 570px;
+		width: 100%;
+		margin-right: 30px;
+	}
+
+	&__submit {
+		padding: 20px 30px;
+		background-color: #96b92c;
+		border: 1px solid #96b92c;
+		color: #fff;
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		transition: background-color .3s ease;
+		cursor: pointer;
+
+		&:hover {
+			background-color: lighten(#96b92c, 10%);
+		}
+	}
+}
