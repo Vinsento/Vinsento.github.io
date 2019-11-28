@@ -1,0 +1,66 @@
+.portfolio {
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-family: $montseratt, sans-serif;
+		font-size: 2.5rem;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	&__subtitle {
+		font-style: italic;
+		color: #777;
+		margin-bottom: 80px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		list-style: none;
+		width: 100%;
+	}
+
+	&__item {
+		flex-basis: 290px;
+	}
+
+	&__link {
+		display: flex;
+		flex-direction: column;
+		height: 440px;
+		text-decoration: none;
+	}
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+
+	&__item-title {
+		font-family: $montseratt, sans-serif;
+		font-size: 1.1rem;
+		font-weight: bold;
+		text-transform: capitalize;
+		color: #000;
+	}
+
+	&__item-subtitle {
+		color: #777;
+		font-style: italic;
+		text-transform: capitalize;
+	}
+
+	&__img {
+		width: 100%;
+	}
+}

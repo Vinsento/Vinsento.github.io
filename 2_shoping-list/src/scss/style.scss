@@ -18,6 +18,11 @@ ul {
 	}
 }
 
+form {
+	display: flex;
+	flex-direction: column;
+}
+
 li p {
 	display: inline-block;
 }

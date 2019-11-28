@@ -61,7 +61,9 @@ body {
 
 .blog__list {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	max-width: 1170px;
+	margin: 0 auto;
 	margin-bottom: 30px;
 }
 

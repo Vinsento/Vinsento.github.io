@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta name="description" content="AKAD is a creative and modern template for digital agencies">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>AKAD - Creative Digital Agency HTML Template</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="first-screen" id="app">
+		<div class="container">
+			<header class="header">
+				<a href="#" class="header__logo">akad.</a>
+				<nav class="header__navigation">
+					<ul class="header__list">
+						<li class="header__item" v-for="item in navigation">
+							<a href="#" class="header__link">{{ item }}</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<section class="first-screen__show">
+				<transition mode="out-in">
+					<div class="show" v-if="isShown" key="one">
+						<div class="show__tab">
+							<p class="show__text">we do</p>
+						</div>
+						<div class="show__title">
+							<h1 class="show__title-text">creative stuff</h1>
+						</div>
+						<div class="show__subtitle">
+							<p class="show__subtitle-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+					<div v-if="!isShown" class="show" key="two">
+						<div class="show__tab">
+							<p class="show__text">we`re</p>
+						</div>
+						<div class="show__title">
+							<h1 class="show__title-text">digital agency</h1>
+						</div>
+						<div class="show__subtitle">
+							<p class="show__subtitle-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+				</transition>
+			</section>
+
+			<section class="first-screen__history">
+				<div class="first-screen__picture">
+					<img src="./img/agency.jpg" alt="agency">
+				</div>
+				<div class="first-screen__info">
+					<h3 class="first-screen__info-title">history of agency</h3>
+					<p class="first-screen__info-text">Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.</p>
+					<button class="first-screen__btn" @click="">read more</button>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="js/bundle.js"></script>
+</body>
+</html>

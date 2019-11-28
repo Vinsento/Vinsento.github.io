@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100vh;
+}
+
+body {
+	font-family: sans-serif;
+	color: #fff;
+}
+
+.wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background-color: tomato;
+}
+
+#app1 {
+	position: absolute;
+	left: 10%;
+	top: 5%;
+}
+
+#app2 {
+	position: absolute;
+	right: 10%;
+	top: 5%;
+}
+#app3 {
+	position: absolute;
+	left: 5%;
+	top: 15%;
+}
+
+#app4 {
+	position: absolute;
+	right: 5%;
+	top: 15%;
+}
+
+#app5 {
+	position: absolute;
+	left: 5%;
+	top: 30%;
+}
+
+#app6 {
+	position: absolute;
+	right: 5%;
+	top: 30%;
+}
+
+#app7 {
+	position: absolute;
+	left: 5%;
+	top: 45%;
+}
+
+#app8 {
+	position: absolute;
+	right: 5%;
+	top: 45%;
+}
+
+#app9 {
+	position: absolute;
+	left: 5%;
+	top: 60%;
+}
+
+#app10 {
+	position: absolute;
+	right: 5%;
+	top: 60%;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	max-width: 40%;
+	width: 100%;
+
+	&__item {
+		display: flex;
+	}
+
+	&__input-text{
+		color: tomato;
+		font-weight: bold;
+		width: 100%;
+
+		&:focus {
+			outline-color: tomato;
+		}
+
+		&::placeholder {
+			color: tomato;
+			font-weight: bold;
+		}
+	}
+
+	&__input-btn,
+	&__input-text, {
+		padding: 15px;
+		border-radius: 5px;
+		border: 1px solid tomato;
+	}
+
+	&__input-btn {
+		color: tomato;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 1px;
+		cursor: pointer;
+		transition: background-color .3s ease;
+
+		&:hover {
+			background-color: #fff;
+		}
+	}
+}

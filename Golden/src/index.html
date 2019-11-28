@@ -3,50 +3,380 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<title>Title</title>
-	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<title>Golden</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.png">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-    
+
     <div class="first-screen">
-        <header class="header">
-            <a href="#" class="header__logo">golden</a>
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="#" class="header__link">home</a>    
+        <div class="container">
+            <header class="header">
+                <a href="#" class="header__logo">golden</a>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">services</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">portfolio</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">about</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="first-screen__welcome">
+                <p class="first-screen__text">welcome to our studio!</p>
+                <h1 class="first-screen__title">it’s nice to meet you</h1>
+                <a href="#" class="first-screen__btn"><span>tell me more</span></a>
+            </div>
+        </div>
+    </div>
+
+    <section class="services">
+        <div class="container">
+            <div class="services__wrapper">
+                <h2 class="services__title">services</h2>
+                <p class="services__subtitle">Proin iaculis purus consequat sem cure.</p>
+                <ul class="services__about">
+                    <li class="services__item">
+                        <div class="services__icon">
+                            <img src="./img/commerce.png" alt="commerce">
+                        </div>
+                        <h4 class="services__item-title">E-commerce</h4>
+                        <p class="services__item-subtitle">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                     </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">services</a>
+                    <li class="services__item">
+                        <div class="services__icon">
+                            <img src="./img/laptop.png" alt="laptop">
+                        </div>
+                        <h4 class="services__item-title">Responsive Web</h4>
+                        <p class="services__item-subtitle">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                     </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">portfolio</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">about</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">contact</a>
+                    <li class="services__item">
+                        <div class="services__icon">
+                            <img src="./img/locked.png" alt="lock">
+                        </div>
+                        <h4 class="services__item-title">Web Security</h4>
+                        <p class="services__item-subtitle">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                     </li>
                 </ul>
-            </nav>
-        </header>
-        
-        <div class="first-screen__welcome">
-            <p class="first-screen__text">welcome to our studio!</p>
-            <h1 class="first-screen__title">it’s nice to meet you</h1>
-            <a href="#" class="first-screen__btn">tell me more</a>
+            </div>
         </div>
-        
-    </div>
-    
-    <section class="services">
-        <h2 class="services__title">services</h2>
-        <p class="services__subtitle">Proin iaculis purus consequat sem cure.</p>
     </section>
 
-	<script src="js/bundle.js"></script>
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio__wrapper">
+                <h2 class="portfolio__title">our portfolio</h2>
+                <p class="portfolio__subtitle">Proin iaculis purus consequat sem cure.</p>
+                <ul class="portfolio__list">
+                    <li class="portfolio__item">
+                        <a href="#" class="portfolio__link">
+                            <img src="./img/item_1.jpg" alt="work example" class="portfolio__img">
+                            <div class="portfolio__description">
+                                <p class="portfolio__item-title">abony & ivory</p>
+                                <p class="portfolio__item-subtitle">branding</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <a href="#" class="portfolio__link">
+                            <img src="./img/item_2.jpg" alt="work example" class="portfolio__img">
+                            <div class="portfolio__description">
+                                <p class="portfolio__item-title">smart stationary</p>
+                                <p class="portfolio__item-subtitle">print desing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <a href="#" class="portfolio__link">
+                            <img src="./img/item_3.jpg" alt="work example" class="portfolio__img">
+                            <div class="portfolio__description">
+                                <p class="portfolio__item-title">clever poster</p>
+                                <p class="portfolio__item-subtitle">print desing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <a href="#" class="portfolio__link">
+                            <img src="./img/item_4.jpg" alt="work example" class="portfolio__img">
+                            <div class="portfolio__description">
+                                <p class="portfolio__item-title">vinyl record</p>
+                                <p class="portfolio__item-subtitle">product mock-up</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <a href="#" class="portfolio__link">
+                            <img src="./img/item_5.jpg" alt="work example" class="portfolio__img">
+                            <div class="portfolio__description">
+                                <p class="portfolio__item-title">threehouse template</p>
+                                <p class="portfolio__item-subtitle">web desing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <a href="#" class="portfolio__link">
+                            <img src="./img/item_6.jpg" alt="work example" class="portfolio__img">
+                            <div class="portfolio__description">
+                                <p class="portfolio__item-title">burned logo</p>
+                                <p class="portfolio__item-subtitle">branding</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <h2 class="about__title">about us</h2>
+                <p class="about__subtitle">Proin iaculis purus consequat sem cure.</p>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <div class="about__text">
+                         <h4 class="about__header">july 2010</h4>
+                         <h4 class="about__header">our humble beginnings</h4>
+                         <p class="about__description">
+                             Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.
+                         </p>
+                     </div>
+                     <div class="about__img">
+                         <img src="./img/about_1.jpg" alt="desk" class="about_image">
+                     </div>
+             </li>
+             <li class="about__item">
+                    <div class="about__img">
+                        <img src="./img/about_2.jpg" alt="ocean" class="about_image">
+                    </div>
+                    <div class="about__text">
+                        <h4 class="about__header">january 2011</h4>
+                        <h4 class="about__header">facing startup battles</h4>
+                        <p class="about__description">
+                            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.
+                        </p>
+                    </div>
+            </li>
+            <li class="about__item">
+                    <div class="about__text">
+                        <h4 class="about__header">december 2012</h4>
+                        <h4 class="about__header">enter the dark days</h4>
+                        <p class="about__description">
+                            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.
+                        </p>
+                    </div>
+                    <div class="about__img">
+                        <img src="./img/about_3.jpg" alt="dark" class="about_image">
+                    </div>
+            </li>
+            <li class="about__item">
+                    <div class="about__img">
+                        <img src="./img/about_4.jpg" alt="mountains" class="about_image">
+                    </div>
+                    <div class="about__text">
+                        <h4 class="about__header">february 2014</h4>
+                        <h4 class="about__header">our triumph</h4>
+                        <p class="about__description">
+                            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.
+                        </p>
+                    </div>
+            </li>
+        </ul>
+        <div class="about__story">
+            <span class="about__story-text">our</span>
+            <span class="about__story-text">story</span>
+            <span class="about__story-text">continues</span>
+            <span class="about__story-text">...</span>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="team">
+    <div class="container">
+        <div class="team__wrapper">
+            <h2 class="team__title">our amazing team</h2>
+            <p class="team__subtitle">Proin iaculis purus consequat sem cure.</p>
+            <ul class="team__list">
+                <li class="team__item">
+                    <div class="team__foto">
+                        <img src="" alt="" >
+                    </div>
+                    <div class="team__info">
+                        <p class="team__name">Kimberly Thompson</p>
+                        <p class="team__prof">Marketer</p>
+                    </div>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="./img/Twitter.png" alt="twitter icon">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="./img/Facebook.png" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="./img/Pinterest.png" alt="pinterest icon">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="team__item">
+                    <div class="team__foto">
+                        <img src="" alt="" >
+                    </div>
+                    <div class="team__info">
+                        <p class="team__name">Rico Massimo</p>
+                        <p class="team__prof">Coder</p>
+                    </div>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="./img/Twitter.png" alt="twitter icon">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="./img/Facebook.png" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="./img/Pinterest.png" alt="pinterest icon">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="team__item">
+                    <div class="team__foto">
+                        <img src="" alt="" >
+                    </div>
+                    <div class="team__info">
+                        <p class="team__name">Uku Mason</p>
+                        <p class="team__prof">Graphic Designer</p>
+                    </div>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="./img/Twitter.png" alt="twitter icon">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="./img/Facebook.png" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="./img/Pinterest.png" alt="pinterest icon">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="team__description">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+        </div>
+    </div>
+</section>
+
+<div class="brands">
+    <div class="container">
+        <ul class="brands__list">
+            <li class="brands__item">
+                <a href="#" class="brands__link">
+                    <img src="./img/Envato.png" alt="envato">
+                </a>
+            </li>
+            <li class="brands__item">
+                <a href="#" class="brands__link">
+                    <img src="./img/WordPress.png" alt="wordpress">
+                </a>
+            </li>
+            <li class="brands__item">
+                <a href="#" class="brands__link">
+                    <img src="./img/Tuts+.png" alt="ae tuts+">
+                </a>
+            </li>
+            <li class="brands__item">
+                <a href="#" class="brands__link">
+                    <img src="./img/Microlancer.png" alt="microlancer">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<section class="contact">
+        <div class="contact__wrapper">
+            <h2 class="contact__title">contact us</h2>
+            <p class="contact__subtitle">Proin iaculis purus consequat sem cure.</p>
+            <form class="contact__form">
+
+                <div class="contact__form-content">
+                    <div class="contact__left">
+                        <input type="text" class="contact__input" placeholder="your name *" required>
+                        <input type="email" class="contact__input" placeholder="your e-mail *" required>
+                        <input type="text" class="contact__input" placeholder="subject" required>
+                    </div>
+                    <div class="contact__right">
+                        <textarea name="message" class="contact__message" placeholder="your message *" required></textarea>
+                    </div>
+                </div>
+
+                <input type="submit" value="send message" class="contact__submit">
+            </form>
+        </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <p class="footer__copyright">
+                © Copyright 2014 FreebiesXpress.com
+            </p>
+
+            <ul class="footer__social">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <img src="./img/Twitter_white.png" alt="twitter">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <img src="./img/Facebook_white.png" alt="facebook">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <img src="./img/Pinterest_white.png" alt="pinterest">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <img src="./img/Google+.png" alt="google+">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="js/bundle.js"></script>
 </body>
 </html>

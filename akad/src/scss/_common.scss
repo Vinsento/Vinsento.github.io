@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100vh;
+}
+
+body {
+	font-size: 100%;
+	font-family: $main;
+	color: $main-gray;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+	max-width: 1170px;
+}
+
+.v-enter-active,
+.v-leave-acitive {
+	transition: opacity .6s ease;
+}
+
+.v-enter,
+.v-leave-to {
+	opacity: 0;
+}
+
+.v-enter-to,
+.v-leave {
+	opacity: 1;
+}

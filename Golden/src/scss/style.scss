@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap');
 @import 'vars';
 @import 'first-screen';
+@import 'services';
+@import 'portfolio';
+@import 'about';
+@import 'team';
+@import 'brands';
+@import 'contact';
+@import 'footer';
 
 
 * {
@@ -17,4 +25,9 @@ html, body {
 
 body {
     font-size: 100%;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
 }

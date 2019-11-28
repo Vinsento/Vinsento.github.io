@@ -3,7 +3,17 @@ var shoppingList = new Vue({
 	data() {
 		return {
 			title: 'Shopping List',
-			list: ['milk', 'butter', 'coffe', 'orange']
+			list: [],
+			value: ''
+		}
+	},
+	computed: {
+		add() {
+			this.list.push(this.value)
+			this.value = ''
+		},
+		del() {
+			this.lisy = []
 		}
 	}
 })
