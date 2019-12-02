@@ -173,11 +173,11 @@ btn_7.addEventListener('click', function(e){
 	e.preventDefault();
 	let sum = +document.querySelector('#app_7-input').value;
 	if (sum > 199 && sum < 300) {
-		app.textContent = "Сумма к оплате со скидкой: " + (sum - sum * 0.03);
+		app.textContent = "Сумма к оплате со скидкой: " + (sum - sum * 0.03).toFixed(2);
 	} else if (sum >= 300 && sum <= 500) {
-		app.textContent = "Сумма к оплате со скидкой: " + (sum - sum * 0.05);
+		app.textContent = "Сумма к оплате со скидкой: " + (sum - sum * 0.05).toFixed(2);
 	} else if (sum > 500) {
-		app.textContent = "Сумма к оплате со скидкой: " + (sum - sum * 0.07);
+		app.textContent = "Сумма к оплате со скидкой: " + (sum - sum * 0.07).toFixed(2);
 	} else if (sum < 0) {
 		app.textContent = "Сумма введена не верно";
 	} else {
@@ -286,4 +286,5 @@ btn_10.addEventListener('click', function(e){
     	month = 1;
     };
     app.textContent = "Следующий день: " + day + "." + month + "." + year + "г.";
+    document.querySelector('#app_10-input').value = "";
 });
