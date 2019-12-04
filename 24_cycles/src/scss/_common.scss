@@ -1,0 +1,26 @@
+body, html {
+	height: 100vh;
+}
+.container {
+	height: 100%;
+}
+.form {
+	height: 7%;
+}
+.row {
+	height: 100%;
+}
+
+.title, .number {
+	transition: all .5s ease;
+}
+
+.titleNext, .numberNext {
+	transition: all .5s ease;
+}
+
+.opacity {
+	opacity: 0;
+	position: absolute;
+	margin-right: -100%;
+}
